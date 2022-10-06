@@ -5,7 +5,7 @@ import { z } from "zod";
 
 const Form = z.object({
   name: z.string(),
-  phoneNumber: z.string(),
+  phoneNumber: z.optional(z.string()),
   //                     ^ 🕵️‍♂️
 });
 
